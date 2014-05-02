@@ -18,7 +18,7 @@ public class Google {
 
     @Test
     public void searchOnGoogle(){
-        driver.findElement(By.id("gbqfq")).sendKeys("Hi");
+        driver.findElement(By.id("gbqfq")).sendKeys("Hi there");
     }
 
     @After
