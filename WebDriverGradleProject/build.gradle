@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+seleniumVersion = "2.41.0"
+testNgVersion = "5.7"
+
+dependencies {
+    compile group: 'junit', name: 'junit', version: '4.11'
+    compile "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
+    compile "org.testng:testng:${testNgVersion}"
+}
