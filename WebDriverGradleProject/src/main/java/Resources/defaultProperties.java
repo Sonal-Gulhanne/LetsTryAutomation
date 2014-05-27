@@ -7,4 +7,5 @@ public interface defaultProperties {
 
     String driverName = "chrome";
     String chromeDriverDir = "/WebDriverGradleProject/src/main/java/Resources/chromedriver";
+    String URL = "http://the-internet.herokuapp.com/";
 }

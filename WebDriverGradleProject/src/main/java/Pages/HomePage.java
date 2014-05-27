@@ -2,21 +2,18 @@ package Pages;
 
 
 import FrameWork.WebDriverExtension;
+import Pages.UI_Elements.HomePage_Elements;
 import org.openqa.selenium.By;
 
-public class HomePage extends WebDriverExtension {
+public class HomePage extends WebDriverExtension implements HomePage_Elements{
 
     WebDriverExtension driver = new WebDriverExtension();
 
-    public void goToHomePage() {
-        driver.open("http://the-internet.herokuapp.com/");
-    }
-
     public void clickAbTestingLink() {
-        driver.clickAt(By.xpath("//a[.='A/B Testing']"));
+        driver.clickAt(By.xpath(ABTestingLink_xpath));
     }
 
     public void clickDragAndDropLink() {
-        driver.clickAt(By.xpath("//a[.='Drag and Drop']"));
+        driver.clickAt(By.xpath(DragAndDropLink_xpath));
     }
 }

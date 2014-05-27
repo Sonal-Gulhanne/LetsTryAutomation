@@ -15,19 +15,13 @@ public class TheInternet_Tests extends HomePage {
 
     @Test
     public void testAbOnHomePage() {
-        homePage.goToHomePage();
         homePage.clickAbTestingLink();
-
         abTestingPage.verifyTextAtTheAbTestingPage();
     }
 
     @Test
     public void testDragAndDrop() throws InterruptedException {
-        homePage.goToHomePage();
         homePage.clickDragAndDropLink();
-
         dragAndDropPage.dragAonB();
     }
-
-
 }
