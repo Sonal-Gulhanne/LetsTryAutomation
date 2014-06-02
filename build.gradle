@@ -8,5 +8,14 @@ repositories {
     mavenCentral()
 }
 
+test {
+    useTestNG()
+
+    include '*.*'
+
+    logger.lifecycle("Running test: hey there **********")
+
+}
+
 dependencies {
 }
