@@ -1,5 +1,4 @@
 apply plugin: 'java'
-apply plugin: 'groovy'
 apply plugin: 'idea'
 apply plugin: 'maven'
 apply plugin: 'signing'
@@ -17,7 +16,7 @@ dependencies {
     dependencies {
         def CUCUMBER_VERSION = '1.1.6'
 
-        compile 'info.cukes:cucumber-core:' + CUCUMBER_VERSION
+        testCompile 'info.cukes:cucumber-core:' + CUCUMBER_VERSION
         testCompile 'junit:junit:4.11'
         testCompile 'info.cukes:cucumber-junit:' + CUCUMBER_VERSION
         testCompile 'info.cukes:cucumber-java:' + CUCUMBER_VERSION

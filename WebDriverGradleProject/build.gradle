@@ -12,7 +12,7 @@ repositories {
 //testNgVersion = '5.7'
 
 dependencies {
-    compile group: 'junit', name: 'junit', version: '4.11'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.41.0'
-    compile "org.testng:testng:6.3.1"
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.41.0'
+    testCompile "org.testng:testng:6.3.1"
 }
