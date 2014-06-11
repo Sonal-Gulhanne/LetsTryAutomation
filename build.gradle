@@ -13,8 +13,6 @@ test {
 
     include '*.*'
 
-    logger.lifecycle("Running test: hey there **********")
-
 }
 
 dependencies {
