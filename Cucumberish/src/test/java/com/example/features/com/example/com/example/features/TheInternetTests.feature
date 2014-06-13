@@ -15,4 +15,3 @@ Feature: I want to test the Internet site
     |name|
     |Abhinav|
     |Vaid|
-

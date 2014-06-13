@@ -57,4 +57,5 @@ public class StepDefinitions {
     public void i_click_search_button() throws Throwable {
         driver.findElement(By.xpath("//*[@id=\"gbqfb\"]/span")).click();
     }
+
 }
