@@ -51,6 +51,7 @@ public class StepDefinitions {
     @Then("^I should see search results for \"(.*?)\"$")
     public void i_should_see_search_results_for(String arg1) throws Throwable {
         driver.getPageSource().contains(arg1);
+        driver.close();
     }
 
     @When("^I click search button$")

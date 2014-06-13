@@ -6,5 +6,5 @@ Feature: I want to test a simple feature
         Then there are these many <left> cucumbers
         Examples:
         |start|eat|left|
-        |  12   |  5|  8  |
-          |    20   | 10  |  12   |
+        |  12   |  5|  7  |
+          |    20   | 10  |  10   |
