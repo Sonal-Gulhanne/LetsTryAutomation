@@ -21,4 +21,8 @@ public class HomePage extends WebDriverExtension implements HomePage_Elements, B
     public void goToBasicAuthLink(){
         driver.open(basicAuthenticationURL);
     }
+
+    public void clickMultipleWindowsLink(){
+        driver.clickAt(By.xpath(MultipleWindowsLink_xpath));
+    }
 }

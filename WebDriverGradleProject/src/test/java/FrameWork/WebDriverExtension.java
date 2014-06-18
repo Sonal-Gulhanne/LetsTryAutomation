@@ -3,9 +3,6 @@ package FrameWork;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-/**
-* Created by ee on 06/05/14.
-*/
 public class WebDriverExtension extends BaseTestClass {
 
     public void writeAt(By searchCriteria, String textToBeWritten) {

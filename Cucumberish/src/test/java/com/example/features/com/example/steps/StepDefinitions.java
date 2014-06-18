@@ -7,9 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
- * Created by ee on 11/06/14.
- */
 public class StepDefinitions {
 
     WebDriver driver = new FirefoxDriver();

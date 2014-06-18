@@ -5,9 +5,6 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 
-/**
- * Created by ee on 13/06/14.
- */
 public class SimpleSteps {
 
 

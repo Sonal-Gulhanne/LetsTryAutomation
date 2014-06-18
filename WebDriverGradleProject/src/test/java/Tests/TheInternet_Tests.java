@@ -1,9 +1,6 @@
 package Tests;
 
-import Pages.ABTestingPage;
-import Pages.BasicAuthPage;
-import Pages.DragAndDropPage;
-import Pages.HomePage;
+import Pages.*;
 import org.testng.annotations.Test;
 
 public class TheInternet_Tests extends HomePage {
@@ -15,6 +12,8 @@ public class TheInternet_Tests extends HomePage {
     DragAndDropPage dragAndDropPage = new DragAndDropPage();
 
     BasicAuthPage basicAuthPage = new BasicAuthPage();
+
+    MultipleWindowsPage multipleWindowsPage = new MultipleWindowsPage();
 
     @Test
     public void testAbOnHomePage() {
@@ -32,5 +31,14 @@ public class TheInternet_Tests extends HomePage {
     public void testBasicAuth(){
         homePage.goToBasicAuthLink();
         basicAuthPage.verifyTextAtBasicAuthPage();
+    }
+
+    @Test
+    public void testMultipleWindows(){
+        homePage.clickMultipleWindowsLink();
+        multipleWindowsPage.clickHere();
+        multipleWindowsPage.geFirstName();
+        multipleWindowsPage.switchToTheOtherWindow();
+        multipleWindowsPage.comeBackToTheOriginalWindow();
     }
 }
