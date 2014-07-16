@@ -21,7 +21,6 @@ public class TryGoogleTests {
     FirefoxProfile firefoxProfile = allProfiles.getProfile("Selenium");
 
 
-
     @Before
     public void startBrowser() {
         driver = new FirefoxDriver(firefoxProfile);
