@@ -1,16 +1,14 @@
 package com.example.features.com.example.steps;
 
-import com.example.features.com.example.resources.BaseTestClass;
-import cucumber.api.java.en.Given;
+import com.example.features.com.example.resources.BaseTest;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class StepDefinitions {
 
-    WebDriver driver = BaseTestClass.getInstanceOfWebDriver();
+    WebDriver driver = BaseTest.getInstanceOfWebDriver();
 
     @When("^I click on AB Testing link$")
     public void i_click_on_AB_Testing_link()  {

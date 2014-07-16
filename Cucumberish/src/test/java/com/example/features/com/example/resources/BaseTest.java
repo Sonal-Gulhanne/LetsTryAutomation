@@ -3,7 +3,7 @@ package com.example.features.com.example.resources;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class BaseTestClass {
+public class BaseTest {
 
     private static WebDriver driver;
 

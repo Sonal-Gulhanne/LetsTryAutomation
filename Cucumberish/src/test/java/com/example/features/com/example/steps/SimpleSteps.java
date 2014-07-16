@@ -1,6 +1,6 @@
 package com.example.features.com.example.steps;
 
-import com.example.features.com.example.resources.BaseTestClass;
+import com.example.features.com.example.resources.BaseTest;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -8,9 +8,9 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SimpleSteps extends BaseTestClass {
+public class SimpleSteps extends BaseTest {
 
-    WebDriver driver = BaseTestClass.getInstanceOfWebDriver();
+    WebDriver driver = BaseTest.getInstanceOfWebDriver();
 
     int start;
     int eat;
