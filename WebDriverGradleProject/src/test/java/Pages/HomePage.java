@@ -6,7 +6,7 @@ import Pages.UI_Elements.BasicAuth_Elements;
 import Pages.UI_Elements.HomePage_Elements;
 import org.openqa.selenium.By;
 
-public class HomePage extends WebDriverExtension implements HomePage_Elements, BasicAuth_Elements{
+public class HomePage extends WebDriverExtension implements HomePage_Elements, BasicAuth_Elements {
 
     WebDriverExtension driver = new WebDriverExtension();
 
@@ -18,11 +18,11 @@ public class HomePage extends WebDriverExtension implements HomePage_Elements, B
         driver.clickAt(By.xpath(DragAndDropLink_xpath));
     }
 
-    public void goToBasicAuthLink(){
+    public void goToBasicAuthLink() {
         driver.open(basicAuthenticationURL);
     }
 
-    public void clickMultipleWindowsLink(){
+    public void clickMultipleWindowsLink() {
         driver.clickAt(By.xpath(MultipleWindowsLink_xpath));
     }
 }

@@ -9,7 +9,7 @@ public class BaseTest {
 
     public static WebDriver getInstanceOfWebDriver() {
 
-        if(driver == null){
+        if (driver == null) {
             driver = new FirefoxDriver();
             return driver;
         }

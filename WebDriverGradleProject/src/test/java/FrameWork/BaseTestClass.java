@@ -8,9 +8,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 public class BaseTestClass implements defaultProperties {
-    private static WebDriver _webDriver;
     public static WebDriver driver;
-
+    private static WebDriver _webDriver;
     String currentDirectory = System.getProperty("user.dir");
 
     public WebDriver StartBrowser(String driverName) {
@@ -18,7 +17,7 @@ public class BaseTestClass implements defaultProperties {
             System.setProperty("webdriver.chrome.driver", currentDirectory + chromeDriverDir);
             _webDriver = new ChromeDriver();
             return _webDriver;
-        }else {
+        } else {
             _webDriver = new FirefoxDriver();
             return _webDriver;
         }

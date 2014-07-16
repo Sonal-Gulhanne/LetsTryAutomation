@@ -28,13 +28,13 @@ public class TheInternet_Tests extends HomePage {
     }
 
     @Test
-    public void testBasicAuth(){
+    public void testBasicAuth() {
         homePage.goToBasicAuthLink();
         basicAuthPage.verifyTextAtBasicAuthPage();
     }
 
     @Test
-    public void testMultipleWindows(){
+    public void testMultipleWindows() {
         homePage.clickMultipleWindowsLink();
         multipleWindowsPage.clickHere();
         multipleWindowsPage.geFirstName();

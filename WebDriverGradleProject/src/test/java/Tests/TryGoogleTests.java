@@ -9,8 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
-import org.sikuli.webdriver.ImageElement;
-import org.sikuli.webdriver.SikuliFirefoxDriver;
 import org.testng.Assert;
 
 public class TryGoogleTests {

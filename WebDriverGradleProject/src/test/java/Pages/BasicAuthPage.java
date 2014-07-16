@@ -8,7 +8,7 @@ public class BasicAuthPage extends WebDriverExtension implements BasicAuth_Eleme
 
     WebDriverExtension driver = new WebDriverExtension();
 
-    public void verifyTextAtBasicAuthPage(){
+    public void verifyTextAtBasicAuthPage() {
         assert driver.getTextAt(By.cssSelector(text_css)).contains(expectedValueInText_css);
     }
 }
