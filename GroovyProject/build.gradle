@@ -1,0 +1,19 @@
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    dependencies {
+        def CUCUMBER_VERSION = '1.1.6'
+
+        testCompile 'info.cukes:cucumber-core:' + CUCUMBER_VERSION
+        testCompile 'info.cukes:cucumber-junit:' + CUCUMBER_VERSION
+        testCompile 'info.cukes:cucumber-java:' + CUCUMBER_VERSION
+    }
+}

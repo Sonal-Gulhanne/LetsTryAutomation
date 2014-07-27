@@ -1,0 +1,1 @@
+Feature: I want to test rest services
