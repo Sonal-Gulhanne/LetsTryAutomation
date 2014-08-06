@@ -4,11 +4,14 @@ package Tests;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class TryGoogleTests {
@@ -33,7 +36,7 @@ public class TryGoogleTests {
         driver.findElement(By.xpath("//a[.='Geolocation']")).click();
         driver.findElement(By.xpath("//button[.='Where am I?']")).click();
 
-        Thread.sleep(1000);
+        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfElementLocated(By.id("lat-value")));
         Assert.assertEquals(driver.findElement(By.id("lat-value")).getText(), "51.510538");
         Assert.assertEquals(driver.findElement(By.id("long-value")).getText(), "-0.5950409999999999");
 
