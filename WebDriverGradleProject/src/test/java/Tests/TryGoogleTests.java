@@ -14,6 +14,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.util.Set;
+
 public class TryGoogleTests {
     WebDriver driver;
 
@@ -47,6 +51,21 @@ public class TryGoogleTests {
     public void searchOnGoogle() {
         driver.get("https://google.com");
         driver.findElement(By.id("gbqfq")).sendKeys("Hi there");
+    }
+
+
+    @Test
+    public void twoSites() throws AWTException {
+        driver.get("http://www.google.com");
+        Robot r = new Robot();
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_N);
+        r.keyRelease(KeyEvent.VK_CONTROL);
+        r.keyRelease(KeyEvent.VK_N);
+        driver.get("http://www.facebook.com");
+
+        Set<String> sbc = driver.getWindowHandles();
+        System.out.print(sbc.size());
     }
 
     @After
