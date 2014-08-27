@@ -15,25 +15,25 @@ public class TheInternet_Tests extends HomePage {
 
     MultipleWindowsPage multipleWindowsPage = new MultipleWindowsPage();
 
-    @Test
+    @Test(groups = {"theInternetTests"})
     public void testAbOnHomePage() {
         homePage.clickAbTestingLink();
         abTestingPage.verifyTextAtTheAbTestingPage();
     }
 
-    @Test
+    @Test(groups = {"theInternetTests"})
     public void testDragAndDrop() throws InterruptedException {
         homePage.clickDragAndDropLink();
         dragAndDropPage.dragAonB();
     }
 
-    @Test
+    @Test(groups = {"theInternetTests"})
     public void testBasicAuth() {
         homePage.goToBasicAuthLink();
         basicAuthPage.verifyTextAtBasicAuthPage();
     }
 
-    @Test
+    @Test(groups = {"theInternetTests"})
     public void testMultipleWindows() {
         homePage.clickMultipleWindowsLink();
         multipleWindowsPage.clickHere();

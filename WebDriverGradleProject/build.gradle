@@ -10,3 +10,19 @@ repositories {
 
 dependencies {
 }
+
+test {
+    beforeTest { descriptor ->
+        logger.lifecycle("Running test: " + descriptor)
+    }
+
+    task testTheInternetTests() {
+        useTestNG() {
+            includeGroups 'theInternetTests', 'tryGoogleTests'
+        }
+    }
+
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}

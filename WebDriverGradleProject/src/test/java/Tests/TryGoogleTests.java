@@ -1,9 +1,6 @@
 package Tests;
 
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +10,9 @@ import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -26,13 +26,13 @@ public class TryGoogleTests {
     FirefoxProfile firefoxProfile = allProfiles.getProfile("Selenium");
 
 
-    @Before
+    @BeforeTest(groups = {"tryGoogleTests"})
     public void startBrowser() {
         driver = new FirefoxDriver(firefoxProfile);
 
     }
 
-    @Test
+    @Test(groups = {"tryGoogleTests"})
     public void shareYourLocationUsingFirefoxProfile() throws InterruptedException {
         /*Need to create a firefox profile using this site - http://selenium.polteq.com/en/category/tips-tricks/*/
 
@@ -47,14 +47,14 @@ public class TryGoogleTests {
         driver.findElement(By.linkText("See it on Google")).click();
     }
 
-    @Test
+    @Test(groups = {"tryGoogleTests"})
     public void searchOnGoogle() {
         driver.get("https://google.com");
         driver.findElement(By.id("gbqfq")).sendKeys("Hi there");
     }
 
 
-    @Test
+    @Test(groups = {"tryGoogleTests"})
     public void twoSites() throws AWTException {
         driver.get("http://www.google.com");
         Robot r = new Robot();
@@ -68,7 +68,7 @@ public class TryGoogleTests {
         System.out.print(sbc.size());
     }
 
-    @After
+    @AfterTest(groups = {"tryGoogleTests"})
     public void closeBrowser() {
         driver.close();
     }

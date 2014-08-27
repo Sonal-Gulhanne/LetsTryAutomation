@@ -4,8 +4,7 @@ import Resources.defaultProperties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 public class BaseTestClass implements defaultProperties {
     public static WebDriver driver;
@@ -23,14 +22,14 @@ public class BaseTestClass implements defaultProperties {
         }
     }
 
-    @BeforeTest
-    protected void SafeSetUp() {
+    @BeforeMethod(groups = {"theInternetTests"})
+    protected void safeSetUp() {
         driver = StartBrowser(driverName);
         driver.get(URL);
     }
 
-    @AfterTest
-    protected void TearDown() {
+    @AfterMethod(groups = {"theInternetTests"})
+    protected void tearDown() {
         driver.close();
     }
 }
