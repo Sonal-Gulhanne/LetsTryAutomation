@@ -18,5 +18,6 @@ dependencies {
         testCompile 'info.cukes:cucumber-core:' + CUCUMBER_VERSION
         testCompile 'info.cukes:cucumber-junit:' + CUCUMBER_VERSION
         testCompile 'info.cukes:cucumber-java:' + CUCUMBER_VERSION
+        testCompile (group: 'com.jayway.restassured', name: 'rest-assured', version:'2.3.2')
     }
 }

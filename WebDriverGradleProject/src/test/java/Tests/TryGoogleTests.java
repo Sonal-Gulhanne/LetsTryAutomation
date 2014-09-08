@@ -4,6 +4,7 @@ package Tests;
 import org.junit.rules.ExpectedException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
@@ -17,6 +18,15 @@ import org.testng.annotations.Test;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.Set;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class TryGoogleTests {
     WebDriver driver;
@@ -68,8 +78,5 @@ public class TryGoogleTests {
         System.out.print(sbc.size());
     }
 
-    @AfterTest(groups = {"tryGoogleTests"})
-    public void closeBrowser() {
-        driver.close();
-    }
+
 }
