@@ -78,5 +78,10 @@ public class TryGoogleTests {
         System.out.print(sbc.size());
     }
 
+    @AfterTest
+    public void closeBrowser(){
+        driver.close();
+    }
+
 
 }
