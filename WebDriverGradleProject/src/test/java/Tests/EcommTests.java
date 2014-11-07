@@ -64,7 +64,7 @@ public class EcommTests {
 
         driver.findElement(By.id("email")).sendKeys(email);
         driver.findElement(By.id("password")).clear();
-        driver.findElement(By.id("password")).sendKeys("abhinav123");
+        driver.findElement(By.id("password")).sendKeys("abhinav1223");
         driver.findElement(By.id("confirmPassword")).clear();
         driver.findElement(By.id("confirmPassword")).sendKeys("abhinav123");
         new Select(driver.findElement(By.id("securityQuestion"))).selectByVisibleText("Memorable name");
