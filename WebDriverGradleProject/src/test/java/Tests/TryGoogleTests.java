@@ -42,7 +42,7 @@ public class TryGoogleTests {
 
     }
 
-    @Test(groups = {"tryGoogleTests"})
+    @Test(groups = {"tryGoogleTests"}, enabled = false)
     public void shareYourLocationUsingFirefoxProfile() throws InterruptedException {
         /*Need to create a firefox profile using this site - http://selenium.polteq.com/en/category/tips-tricks/*/
 
@@ -65,7 +65,7 @@ public class TryGoogleTests {
 
 
     @Test(groups = {"tryGoogleTests"})
-    public void twoSites() throws AWTException {
+    public void flipBetweenTwoSites() throws AWTException {
         driver.get("http://www.google.com");
         Robot r = new Robot();
         r.keyPress(KeyEvent.VK_CONTROL);
@@ -76,6 +76,11 @@ public class TryGoogleTests {
 
         Set<String> sbc = driver.getWindowHandles();
         System.out.print(sbc.size());
+    }
+
+    @AfterTest
+    public void closeBrowser(){
+        driver.close();
     }
 
 
