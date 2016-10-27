@@ -1,9 +1,9 @@
 https://www.ref.o2.co.uk/upgrade/ajax/getRecommendedDevices/
 https://www.ref.o2.co.uk/upgrade/ajax/devicesData/
 https://www.ref.o2.co.uk/upgrade/ajax/getSimoTariffs/
-https://www.ref.o2.co.uk/upgrade/ajax/deviceFamilyData/
+https://www.ref.o2.co.uk/upgrade/ajax/deviceFamilyData/apple/iphone-6s/
 https://www.ref.o2.co.uk/upgrade/ajax/tariffAndExtras/apple/iphone-7/
-https://www.ref.o2.co.uk/shop/ajax/deviceDetailsOverlay/
+https://www.ref.o2.co.uk/shop/ajax/deviceDetailsOverlay/apple/iphone-6s/dff82c22-24b1-442c-b24a-adcbd058b2fb/
 https://www.ref.o2.co.uk/shop/my-offers/ipad/
 https://www.ref.o2.co.uk/upgrade/phones/
 https://www.ref.o2.co.uk/upgrade/tablets/
@@ -15,7 +15,6 @@ https://www.ref.o2.co.uk/upgrade/fitness-trackers/apple/iphone-6s/
 https://www.ref.o2.co.uk/upgrade/mobile-broadband/ apple/iphone-6s/
 https://www.ref.o2.co.uk/upgrade/smartwatches/
 https://www.ref.o2.co.uk/upgrade/smartwatches/apple/iphone-6s/
-https://www.ref.o2.co.uk/upgrade/accessories/all/
 https://www.ref.o2.co.uk/upgrade/brand/apple/
 https://www.ref.o2.co.uk/upgrade/tariff/apple/iphone-6s/
 https://www.ref.o2.co.uk/shop/phones/
@@ -32,7 +31,6 @@ https://www.ref.o2.co.uk/shop/accessories/
 https://www.ref.o2.co.uk/shop/accessories/all/
 https://www.ref.o2.co.uk/shop/brand/apple
 https://www.ref.o2.co.uk/shop/tariff/apple/iphone-6s/
-https://www.ref.o2.co.uk/upgrade/ajax/accessory/compatibilityDeviceList
 https://www.ref.o2.co.uk/upgrade/ajax/home/deviceFamilyList
 https://www.ref.o2.co.uk/upgrade/ajax/getTopDevices
 https://www.ref.o2.co.uk/shop/ajax/accessory/compatibilityDeviceList
