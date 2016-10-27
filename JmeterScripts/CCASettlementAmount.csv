@@ -1,0 +1,6 @@
+label,success,failureMessage,URL
+Get upgrade eligibility for user - 447521008820,true,,https://ecom-ref-app00.ref.o2.co.uk:9443/customerService/upgradeEligibility/447521008820
+Get upgrade eligibility for user - 447521102800,true,,https://ecom-ref-app00.ref.o2.co.uk:9443/customerService/upgradeEligibility/447521102800
+Get upgrade eligibility for user - 447521102816,true,,https://ecom-ref-app00.ref.o2.co.uk:9443/customerService/upgradeEligibility/447521102816
+Get upgrade eligibility for user - 447521102886,true,,https://ecom-ref-app00.ref.o2.co.uk:9443/customerService/upgradeEligibility/447521102886
+Get upgrade eligibility for user - 447801007959,true,,https://ecom-ref-app00.ref.o2.co.uk:9443/customerService/upgradeEligibility/447801007959
